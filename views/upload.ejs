@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i style="font-size:74px" class="fa fa-bank fa-6x" ></i>
+    <h1 class="display-3"> FinancePeer </h1><br />
+    <p class="secret-text">User Login details is encrypted with Cryptography Hybrid Algorithm</p>
+    <hr>
+    <form action="/payment" onsubmit="return true" method="POST" enctype="multipart/form-data">
+  
+         <br>
+                      <span><input type="file" name="jsonfile" placeholder="Browse Json File" required></span>
+                  <br><br>
+     <div class="form-group">
+          <button type="submit" value="Submit" class="btn">Upload</button> 
+      </div>
+          
+      </div>
+    </form>
+ 
+    <a class="btn btn-light btn-lg" href="/home" role="button">Log Out</a>
+
+  </div>
+</div>
